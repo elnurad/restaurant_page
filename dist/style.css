@@ -1,0 +1,17 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navLink {
+    margin-left: 2em;
+}
+
+.menuContainer{
+    display: flex;
+    flex-direction: craw;
+    gap: 3em;
+    font-style: italic;
+    font-size: 3em;
+}

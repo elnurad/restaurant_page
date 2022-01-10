@@ -24,7 +24,12 @@ function createParagraph(text) {
 
 }
 
-export default createAbout;
+// function createAbout() {
+//     const main = document.getElementById("mainSection")
+//     main.appendChild(aboutPage())
+// }
 
-// const content = document.getElementById('content')
-// content.appendChild(creatAbout());
+
+export default createAbout
+       
+
