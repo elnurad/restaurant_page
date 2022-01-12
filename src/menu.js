@@ -1,4 +1,5 @@
-
+import createParagraph from './createParagraph';
+import createH3 from './createH3';
 
 function menuPage() {
     const menuContainer = document.createElement('div'); //div to hold two parts of menu
@@ -30,19 +31,15 @@ function menuPage() {
 
 }
 
-function createH3(text){
-    const h3 = document.createElement('h3')
-    h3.classList.add('h3')
-    h3.textContent = text;
-    return h3
-}
-
-function createParagraph(text){
-    const p = document.createElement('p')
-    p.classList.add('pMenu')
-    p.textContent = text;
-    return p
+function createMenuPage(e) {
+    e.preventDefault()
+    const main = document.getElementById("mainSection")
+    while(main.lastElementChild){
+      main.removeChild(main.lastElementChild)
+    }
+    main.appendChild(menuPage())
 
 }
 
-export default menuPage
+
+export default createMenuPage

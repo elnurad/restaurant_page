@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Barlow+Condensed:wght@300;600&family=La+Belle+Aurore&family=PT+Sans+Narrow&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+    background-image: transparent url('images/bkg.png'); 
+    background-repeat: repeat;
+    font-family: 'La Belle Aurore', cursive;
+    /* font-family: 'Architects Daughter', cursive;
+    font-family: 'Barlow Condensed', sans-serif; 
+    
+    font-family: 'PT Sans Narrow', sans-serif;  */
+}
+.nav {
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.navImage {
+    width: 9.8em;
+
+}
 .nav {
     display: flex;
     justify-content: center;
@@ -5,13 +29,52 @@
 }
 
 .navLink {
-    margin-left: 2em;
+    margin-left: 3em;
 }
 
 .menuContainer{
     display: flex;
-    flex-direction: craw;
+    flex-direction: row;
     gap: 3em;
     font-style: italic;
-    font-size: 3em;
+    font-size: 1.5em;
+    justify-content: center;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.bookVenue {
+    grid-column: 1/4;
+}
+
+.venues{
+    border: 1px solid blue;
+}
+.mainSection {
+    /* margin-top: 1em; */
+    margin: 0 auto;
+ 
+} 
+
+.paragraph, .h3 {
+    text-align: center;
+}
+.aboutImage {
+    display: block;
+    margin: 0 auto;
+    border: 1 px solid red;
+} 
+
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.home p {
+   margin-right: 12em;
+   margin-left: 12em;
+   font-size: 1.5em;
+   
 }
