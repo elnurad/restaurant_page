@@ -10,6 +10,7 @@ function createNav() {
     navImage.src = "images/lavache_logo.png";
     navImage.alt = "logo which says La Vache"
     navImage.classList.add('navImage')
+    navImage.classList.add('navLink')
 
     const linkToAbout = document.createElement('a')
     linkToAbout.classList.add("navLink");
