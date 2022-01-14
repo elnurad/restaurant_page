@@ -3,7 +3,7 @@ import createParagraph from './createParagraph'
 
 function aboutPage() {
     const about = document.createElement('section');
-    about.classList.add("home") //<div class="about"></div>
+    about.classList.add("aboutPageHome") //<div class="about"></div>
 
     const frontImage = document.createElement("img");
     frontImage.src = "images/lavacheFront.jpeg"; 
