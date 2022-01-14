@@ -7,12 +7,14 @@
 body {
     /* background-image: transparent url('images/background.png'); 
    */
-    font-family: 'La Belle Aurore', cursive;
-    /* font-family: 'Architects Daughter', cursive;
-    font-family: 'Barlow Condensed', sans-serif; 
-    
-    font-family: 'PT Sans Narrow', sans-serif;  */
+   font-family: 'La Belle Aurore', cursive;
+   /* font-family: 'Architects Daughter', cursive;
+   font-family: 'Barlow Condensed', sans-serif; 
+   
+   font-family: 'PT Sans Narrow', sans-serif;  */
 }
+
+
 #body {
     background-image: url('images/bkg.png'); 
   
@@ -44,22 +46,74 @@ a:hover {
 .navLink {
     margin-right: 3em;
 } 
+
+.mainSection {
+    margin-bottom: 3em;
+    margin: 0 auto;
+}
 /* .navLink + .navLink {
     margin-left: 2.5em;
 } */
+
+/* Menu Page */
+.menuPageWrapper {
+    margin-top: 0;
+}
+
 .menuContainer{
     display: flex;
-    flex-direction: row;
-    gap: 3em;
+    flex-direction: column;
+    /* gap: 3em; */
     font-style: italic;
     font-size: 1.5em;
     justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.menuContainer h3 {
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+   
 }
 
+.beverageMenu {
+    display: block;
+    margin: 0 auto;
+    border: 1px dotted black;
+    width: 40%;
+}
+
+.frenchMenuDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+.frenchMenu {
+    margin: 0;
+    padding: 0;
+}
+#jumpingCowImg {
+    display: block;
+    width: 6em;
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+/* Contacts page */
+/* gridContainer from Contact page */
 .gridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+/* book Venue and Venues from Contact Page */
 .bookVenue {
     grid-column: 1/4;
 }
@@ -67,35 +121,79 @@ a:hover {
 .venues{
     border: 1px solid blue;
 }
-.mainSection {
-    /* margin-top: 1em; */
-    margin: 0 auto;
- 
-} 
+
+
 
 .paragraph, .h3 {
     margin-top: 2em;
     margin-bottom: 1em;
     text-align: center;
 }
+
+/* About page */
+/* all images on about page are centered */
+
+#frontImage {
+    width: 100%;
+
+}
 .aboutImage {
     display: block;
     margin: 0 auto;
     border: 1 px solid red;
+    
 } 
 
+/* about page - main part */
 .home {
     display: flex;
     flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .home p {
-   margin-right: 12em;
-   margin-left: 12em;
+   /* margin: 1em; */
    font-size: 1.5em;
    
 }
 
-.mainSection {
-    margin-bottom: 3em;
+
+
+
+
+
+@media (min-width:900px) {
+.menuContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    justify-content: center;
+}
+    
+.englishMenu {
+    transform: rotate(10deg);
+}
+
+.frenchMenu {
+    transform: rotate(-10deg)
+} 
+.beverageMenu {
+    /* position: fixed; */
+    margin-left: 8em;
+    border: 1px dotted black;
+    width: 17%;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+/* about page */
+
+.home {
+    width: 60%;
+    
+ }
+
+
 }
