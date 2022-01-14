@@ -47,32 +47,35 @@ a:hover {
     margin-right: 3em;
 } 
 
-.mainSection {
-    margin-bottom: 3em;
-    margin: 0 auto;
-}
-/* .navLink + .navLink {
-    margin-left: 2.5em;
+
+.paragraph, .h3 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: center;
 } */
+
 
 /* Menu Page */
 .menuPageWrapper {
-    margin-top: 0;
+    margin-top: 0 auto;
+    padding-bottom: 1em;
+
 }
 
 .menuContainer{
     display: flex;
     flex-direction: column;
-    /* gap: 3em; */
     font-style: italic;
     font-size: 1.5em;
     justify-content: center;
     width: 70%;
     margin: 0 auto;
     text-align: center;
+   
 }
 .menuContainer h3 {
     font-weight: bold;
+    font-family: 'Architects Daughter', cursive;
     font-size: 3rem;
     padding: 0;
     margin: 0;
@@ -81,9 +84,11 @@ a:hover {
 
 .beverageMenu {
     display: block;
+    padding: 0;
     margin: 0 auto;
     border: 1px dotted black;
     width: 40%;
+    margin-bottom: 2em;
 }
 
 .frenchMenuDiv{
@@ -109,27 +114,63 @@ a:hover {
 /* Contacts page */
 /* gridContainer from Contact page */
 .gridContainer {
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(1fr, 4);
+    margin-bottom: 2em;
+   
+ 
 }
 
-/* book Venue and Venues from Contact Page */
-.bookVenue {
-    grid-column: 1/4;
+.venues {
+    /* width: 100%; */
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: auto;
+}
+.venues h3 {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 1em;
 }
 
-.venues{
-    border: 1px solid blue;
+.hours {
+    text-decoration: underline;
+    font-weight: bold;
+
+
 }
-
-
-
-.paragraph, .h3 {
+.venues p {
+    font-size: 1.4rem;
+    margin: 0.5em;
+}
+.bookButton {
+    font-weight: light;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.836);
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.836);
+    padding-right: 0.3em;
+    padding-left: 0.3em;
     margin-top: 2em;
     margin-bottom: 1em;
-    text-align: center;
+
+}
+.bookButton + .bookButton {
+    margin-left: 1em;
 }
 
+#bookButtonContainer {
+    text-align: center;
+    
+}
+#socialMediaLinks {
+    text-align: center;
+}
 /* About page */
 /* all images on about page are centered */
 
@@ -145,7 +186,7 @@ a:hover {
 } 
 
 /* about page - main part */
-.home {
+.aboutPageHome {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -169,6 +210,7 @@ a:hover {
     flex-direction: row;
     gap: 3em;
     justify-content: center;
+    
 }
     
 .englishMenu {
@@ -185,15 +227,35 @@ a:hover {
     width: 17%;
     text-align: center;
     font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
 
 }
 
-/* about page */
+/* 'about' page */
 
-.home {
+.aboutPageHome {
     width: 60%;
     
  }
+
+/* contacts page */
+.gridContainer {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1fr, 3);
+    width: 80%; 
+    margin-bottom: 2em;
+ 
+}
+.venues {
+    margin-bottom: auto;
+}
+.bookVenue {
+    grid-column: 1/4;
+    margin-bottom: auto;
+    margin-top: 1em;
+} 
 
 
 }
