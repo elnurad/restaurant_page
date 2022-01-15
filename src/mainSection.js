@@ -1,4 +1,4 @@
-
+import createAbout from './about'
 function mainSection() {
     const mainSection = document.createElement('div');
     mainSection.classList.add("mainSection");

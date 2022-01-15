@@ -25,16 +25,16 @@ function aboutPage() {
     return about
 }
 
-
-function createAbout(e) {
-    e.preventDefault()
+function createAbout() {
     const main = document.getElementById("mainSection")
+    main.textContent = ""
     while(main.lastElementChild){
         main.removeChild(main.lastElementChild)
       }
     main.appendChild(aboutPage())
 
 }
+
 
 
 export default createAbout

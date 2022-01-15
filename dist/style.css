@@ -193,7 +193,7 @@ a:hover {
     margin: 0 auto;
 }
 
-.home p {
+.aboutPageHome p {
    /* margin: 1em; */
    font-size: 1.5em;
    
@@ -235,7 +235,7 @@ a:hover {
 /* 'about' page */
 
 .aboutPageHome {
-    width: 60%;
+    width: 55%;
     
  }
 
@@ -257,5 +257,12 @@ a:hover {
     margin-top: 1em;
 } 
 
+
+}
+
+@media (max-width:600px) {
+    .navLink {
+        margin-right: 0.5em;
+    } 
 
 }

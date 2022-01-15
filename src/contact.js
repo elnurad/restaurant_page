@@ -98,6 +98,7 @@ function contactPage() {
 
 function createContactPage(e) {
     e.preventDefault()
+
     const main = document.getElementById("mainSection")
     while(main.lastElementChild){
         main.removeChild(main.lastElementChild)

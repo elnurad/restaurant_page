@@ -43,6 +43,9 @@ function createNav() {
 
 }
 
+
+
+
 function createPage() {
     const page = document.createElement('div');
     page.appendChild(createNav());
@@ -53,6 +56,9 @@ function createPage() {
 
 
 function loadWebsite() {
+    window.addEventListener('load', (e) => {
+        createAbout()
+      });
     const content = document.getElementById("content")
     content.appendChild(createPage());
     return content;
