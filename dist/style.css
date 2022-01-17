@@ -261,8 +261,18 @@ a:hover {
 }
 
 @media (max-width:600px) {
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        font-size: 1em;
+        margin-left: 1.5em;
+
+    }
     .navLink {
-        margin-right: 0.5em;
+       
+        padding: 0;
     } 
 
 }
