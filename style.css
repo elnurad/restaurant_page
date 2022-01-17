@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Barlow+Condensed:wght@300;600&family=La+Belle+Aurore&family=PT+Sans+Narrow&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+    /* background-image: transparent url('images/background.png'); 
+   */
+   font-family: 'La Belle Aurore', cursive;
+   /* font-family: 'Architects Daughter', cursive;
+   font-family: 'Barlow Condensed', sans-serif; 
+   
+   font-family: 'PT Sans Narrow', sans-serif;  */
+}
+
+
+#body {
+    background-image: url('images/bkg.png'); 
+  
+}
+
+.navImage {
+    width: 7.5em;
+
+}
+.nav {
+    margin-top: 1.5em;
+    margin-bottom: 3.5em;
+    display: flex;
+    justify-content: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+
+    
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: rgba(8, 1, 1, 0.877);
+}
+a:hover {
+    opacity: 70%;
+}
+.navLink {
+    margin-right: 3em;
+} 
+
+
+.paragraph, .h3 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+} */
+
+
+/* Menu Page */
+.menuPageWrapper {
+    margin-top: 0 auto;
+    padding-bottom: 1em;
+
+}
+
+.menuContainer{
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    font-size: 1.5em;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+   
+}
+.menuContainer h3 {
+    font-weight: bold;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.beverageMenu {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    border: 1px dotted black;
+    width: 40%;
+    margin-bottom: 2em;
+}
+
+.frenchMenuDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+.frenchMenu {
+    margin: 0;
+    padding: 0;
+}
+#jumpingCowImg {
+    display: block;
+    width: 6em;
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+/* Contacts page */
+/* gridContainer from Contact page */
+.gridContainer {
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(1fr, 4);
+    margin-bottom: 2em;
+   
+ 
+}
+
+.venues {
+    /* width: 100%; */
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: auto;
+}
+.venues h3 {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.hours {
+    text-decoration: underline;
+    font-weight: bold;
+
+
+}
+.venues p {
+    font-size: 1.4rem;
+    margin: 0.5em;
+}
+.bookButton {
+    font-weight: light;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.836);
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.836);
+    padding-right: 0.3em;
+    padding-left: 0.3em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+
+}
+.bookButton + .bookButton {
+    margin-left: 1em;
+}
+
+#bookButtonContainer {
+    text-align: center;
+    
+}
+#socialMediaLinks {
+    text-align: center;
+}
+/* About page */
+/* all images on about page are centered */
+
+#frontImage {
+    width: 100%;
+
+}
+.aboutImage {
+    display: block;
+    margin: 0 auto;
+    border: 1 px solid red;
+    
+} 
+
+/* about page - main part */
+.aboutPageHome {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.aboutPageHome p {
+   /* margin: 1em; */
+   font-size: 1.5em;
+   
+}
+
+
+
+
+
+
+@media (min-width:900px) {
+.menuContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    justify-content: center;
+    
+}
+    
+.englishMenu {
+    transform: rotate(10deg);
+}
+
+.frenchMenu {
+    transform: rotate(-10deg)
+} 
+.beverageMenu {
+    /* position: fixed; */
+    margin-left: 8em;
+    border: 1px dotted black;
+    width: 17%;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+/* 'about' page */
+
+.aboutPageHome {
+    width: 55%;
+    
+ }
+
+/* contacts page */
+.gridContainer {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1fr, 3);
+    width: 80%; 
+    margin-bottom: 2em;
+ 
+}
+.venues {
+    margin-bottom: auto;
+}
+.bookVenue {
+    grid-column: 1/4;
+    margin-bottom: auto;
+    margin-top: 1em;
+} 
+
+
+}
+
+@media (max-width:600px) {
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        font-size: 1em;
+        margin-left: 1.5em;
+
+    }
+    .navLink {
+       
+        padding: 0;
+    } 
+
+}
